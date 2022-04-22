@@ -16,3 +16,19 @@ Texturing...its simple...or complicated? some random UV were made there so...its
 there's pole, guard and lamp cover. the color of light will correspond to lamp cover and effect.
 
 Night texture? I let the simulator handle the pole...except the cover that I use the day texture for it...and it lits so its fine for now.
+
+I mean, after you tweak some effect and compiled the model in MCX, please re-color the lamp cover to be the same so it would look nice as it lits and glow via effect.
+
+//TH 
+โปรเจคนี้ เกิดจากความว่างจัด และไม่อยากเล่นเกมอะไร(ชั่วครู่) ของผม ผมจึ่งนั่งขุดสนามต่างๆที่เคยทำ และก็พบว่า พวกไฟริมขอบเนี่ยผมยืมคนอื่นใช้ เลยมาลองมาทำเอง เก็บไว้ใช้งานอื่นก็ได้ 
+
+ก็จะมีในส่วน Libary BGL ของตัวไฟ และก็พวก Effect ที่ทำให้สว่าง(ที่ผมใช้ Effect เพราะผมอยากให้เอากลับไปใช้ใน FSX ได้)
+ผู้ใช้งานจะสามารถเอาไปลากลงสนามของท่าน ด้วยวิธีใดก็ได้ตามสะดวก อย่างเอาไปประกอบเป็น ADE Libary Object หรือลากวางสดๆ โดยใช้ Simdirector, Object Placement Tool สำหรับ p3d และ fsx ตามลำดับ
+
+ในส่วนของสีไฟ จะปรับยังไงก็ได้ เป็น RGB 256-256-256   ในไฟล์ fx_light_(color).fx   ลองหาบรรทัดนี้แล้วแก้ดู ตามลำดับที่ให้ไว้                     
+                          R    G   B  size(255 max)
+             Color Start=255,  0,  0, 255
+             Color End=  255,  0,  0, 255
+และก็ Texture, ผมทำ UV ไม่เก่ง เลยต้องใช้สีระบายใส่เอา สีละพาท แบ่งเป็น ตัวดวงโคม(Lamp), ฐานรองไฟ(Guard), และขาตั้ง(Pole). อาจดูไม่สวย ลองปรับแต่งกันเองได้แล้วแต่สะดวก
+Texture ตอนกลางคืน ผมปล่อยให้ตัวเสามันมืดไป เหลือแต่ตัวโคมทีใช้ Texture เดียวกันทั้งวันทั้งคืน(Emissive+Albedo)(ผมทำให้มันดูใสด้วยจะได้สวย และจะได้สว่างจาก Effect ที่ผมแปะไว้ข้างใน)
+พูดถึงตัวโคม และสีไฟ หลังจากทำ Effect เสร็จ และไปปรับแต่งใน ModelConverterX แล้ว ไประบายสีตัวโคมให้เป็นสีเดียวกับไฟด้วย จะได้สวยๆ ผมแนะนำ
