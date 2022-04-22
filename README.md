@@ -6,9 +6,9 @@ You can place it using ADE as internal Library or use sth like visual scenery ed
 
 About lighting effects, it's pretty simple to edit its color using this arrangement
 
-            R    G  B  size(255 max)
-Color Start=255, 0, 0, 255
-Color End=255, 0, 0, 255
+                          R    G   B  size(255 max)
+             Color Start=255,  0,  0, 255
+             Color End=  255,  0,  0, 255
 
 Texturing...its simple...or complicated? some random UV were made there so...its just solid color. I'm not texture artist also so bear with it or edit it as you like
 there's pole, guard and lamp cover. the color of light will correspond to lamp cover and effect.
