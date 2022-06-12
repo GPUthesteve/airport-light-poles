@@ -25,7 +25,7 @@ I mean, after you tweak some effect and compiled the model in MCX, please re-col
 ก็จะมีในส่วน Libary BGL ของตัวไฟ และก็พวก Effect ที่ทำให้สว่าง(ที่ผมใช้ Effect เพราะผมอยากให้เอากลับไปใช้ใน FSX ได้)
 ผู้ใช้งานจะสามารถเอาไปลากลงสนามของท่าน ด้วยวิธีใดก็ได้ตามสะดวก อย่างเอาไปประกอบเป็น ADE Libary Object หรือลากวางสดๆ โดยใช้ Simdirector, Object Placement Tool สำหรับ p3d และ fsx ตามลำดับ
 
-ในส่วนของสีไฟ จะปรับยังไงก็ได้ เป็น RGB 256-256-256   ในไฟล์ fx_light_(color).fx   ลองหาบรรทัดนี้แล้วแก้ดู ตามลำดับที่ให้ไว้                     
+ในส่วนของสีไฟ จะปรับยังไงก็ได้ เป็น RGB 255-255-255   ในไฟล์ fx_light_(color).fx   ลองหาบรรทัดนี้แล้วแก้ดู ตามลำดับที่ให้ไว้                     
                           R    G   B  size(255 max)
              Color Start=255,  0,  0, 255
              Color End=  255,  0,  0, 255
