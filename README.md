@@ -7,8 +7,8 @@ Well, it contains BGL Library of "Lights" and effect itself (I use effect so the
 You can place it using ADE as internal Library or use sth like visual scenery editor "Simdirector." for p3d or FSX's Object Placement Tool located in SDK..
 
 About lighting effects, it's pretty simple to edit its color using this arrangement
-
-                          R    G   B  size(255 max)
+while color start is day color and coler end is night color...
+                          R    G   B  intensity(255 max)
              Color Start=255,  0,  0, 255
              Color End=  255,  0,  0, 255
 
